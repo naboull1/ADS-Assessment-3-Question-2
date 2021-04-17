@@ -36,7 +36,7 @@ void heapClass::heapifyup(int index)
     //IF index is not the root(top of the tree)
 //AND parent index within heap bounds (not negative)
 //AND current nodes rank less then parent nodes rank
-    if (index >= 0 && parentIndex(index) >= 0 && heap[index].rank < heap[parentIndex(index)].rank) {
+    if (index >= 0 && parentIndex(index) >= 0 && heap[index].rank > heap[parentIndex(index)].rank) {
         //if so, swap values between current node and parent
         numbersClass temp = heap[index];
         heap[index] = heap[parentIndex(index)];
