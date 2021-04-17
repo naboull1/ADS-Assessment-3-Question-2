@@ -43,33 +43,5 @@ void main()
 	heapTree1.showHeap();
 
 
-
-
-
-
-
-
-
-
-	////NOTE doesn't really care about sorting, just min parents
-	//topRankedPlayers.showHeap();
-	////try get top player
-	//numbersClass* topPlayer = topRankedPlayers.ExtractMin();
-	//if (topPlayer != NULL)
-	//	cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
-	//else
-	//	cout << "Heap must be empty!!!" << endl;
-
-	//cout << "Try deleting top player..." << endl;
-	//topRankedPlayers.DeleteMin();
-	//topPlayer = topRankedPlayers.ExtractMin();
-	//if (topPlayer != NULL)
-	//	cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
-	//else
-	//	cout << "Heap must be empty!!!" << endl;
-
-	//cout << "Try deleting top player..." << endl;
-
-
 	system("pause");
 }

@@ -1,4 +1,4 @@
 ﻿  heapClass.cpp
-G:\Work\GitKraken\ADS-Assessment-3-Question-2\ADS-Assessment-3-Question-2\heapClass.cpp(6,19): warning C4018: '<': signed/unsigned mismatch
-G:\Work\GitKraken\ADS-Assessment-3-Question-2\ADS-Assessment-3-Question-2\heapClass.cpp(15,20): warning C4018: '<': signed/unsigned mismatch
+G:\Work\GitKraken\ADS-Assessment-3-Question-2\ADS-Assessment-3-Question-2\heapClass.cpp(8,19): warning C4018: '<': signed/unsigned mismatch
+G:\Work\GitKraken\ADS-Assessment-3-Question-2\ADS-Assessment-3-Question-2\heapClass.cpp(17,20): warning C4018: '<': signed/unsigned mismatch
   ADS-Assessment-3-Question-2.vcxproj -> G:\Work\GitKraken\ADS-Assessment-3-Question-2\ADS-Assessment-3-Question-2\Debug\ADS-Assessment-3-Question-2.exe

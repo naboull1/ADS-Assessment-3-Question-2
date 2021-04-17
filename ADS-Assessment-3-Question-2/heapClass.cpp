@@ -1,4 +1,6 @@
 #include "heapClass.h"
+#include <windows.h>								//Library for controling windows functions
+#include <fstream>									//Library for File System control
 
 int heapClass::leftChildIndex(int parent)
 {
@@ -118,11 +120,18 @@ numbersClass* heapClass::ExtractMin()
 
 void heapClass::showHeap()
 {
+    //Writes the result to a text file
+    ofstream  writeFile;
+    writeFile.open("output-a1q1.txt");
+
     for (numbersClass p : heap)
     {
         cout << p.rank << "   " ;
+
+        writeFile << p.rank << "   ";
     }
     cout << endl;
+    writeFile.close();
 }
 
 int heapClass::Size()
