@@ -23,5 +23,5 @@ public:
 	numbersClass* ExtractMin();
 	void showHeap();
 	int Size();
-
+	void beforeHeap(numbersClass element1);
 };

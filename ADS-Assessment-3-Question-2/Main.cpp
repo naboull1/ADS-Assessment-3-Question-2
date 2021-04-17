@@ -12,45 +12,63 @@ void main()
 	int firstLineVariable;
 	int secondLineVariable;
 
-	heapClass topRankedPlayers;
+	heapClass heapTree1;
+	heapClass heapTree2;
 
 	//Reads in textfile and stores information into Variables
 	ifstream readFile;
-	readFile.open("input-q2a2.txtt");
+	readFile.open("input-q2a2.txt");
 	readFile >> firstLineVariable;
+
+	//heapClass topRankedPlayers;
+
+	
 
 	for (int i = 0; i < firstLineVariable; i++)
 	{
 		readFile >> secondLineVariable;
-		topRankedPlayers.Insert(numbersClass(22, "Goober"));
+		heapTree1.Insert(numbersClass(secondLineVariable));
+		heapTree2.beforeHeap(numbersClass(secondLineVariable));
 	}
 
 
-	topRankedPlayers.Insert(numbersClass(22, "Goober"));
-	topRankedPlayers.Insert(numbersClass(4, "Kelpy"));
-	topRankedPlayers.Insert(numbersClass(24, "Octopus"));
-	topRankedPlayers.Insert(numbersClass(3, "$Bling$"));
-	numbersClass p1(1, "Head_Sh0t!");
-	topRankedPlayers.Insert(p1);
+	cout << " Before Heap -->";
+	heapTree2.showHeap();
 
-	//NOTE doesn't really care about sorting, just min parents
-	topRankedPlayers.showHeap();
-	//try get top player
-	numbersClass* topPlayer = topRankedPlayers.ExtractMin();
-	if (topPlayer != NULL)
-		cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
-	else
-		cout << "Heap must be empty!!!" << endl;
 
-	cout << "Try deleting top player..." << endl;
-	topRankedPlayers.DeleteMin();
-	topPlayer = topRankedPlayers.ExtractMin();
-	if (topPlayer != NULL)
-		cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
-	else
-		cout << "Heap must be empty!!!" << endl;
+	//heapifyup(heapTree1.Size() - 1);
 
-	cout << "Try deleting top player..." << endl;
+
+	cout << " After Heap -->";
+	heapTree1.showHeap();
+
+
+
+
+
+
+
+
+
+
+	////NOTE doesn't really care about sorting, just min parents
+	//topRankedPlayers.showHeap();
+	////try get top player
+	//numbersClass* topPlayer = topRankedPlayers.ExtractMin();
+	//if (topPlayer != NULL)
+	//	cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
+	//else
+	//	cout << "Heap must be empty!!!" << endl;
+
+	//cout << "Try deleting top player..." << endl;
+	//topRankedPlayers.DeleteMin();
+	//topPlayer = topRankedPlayers.ExtractMin();
+	//if (topPlayer != NULL)
+	//	cout << "Highest Rank Player: " << topPlayer->rank << " " << (*topPlayer).name << endl;
+	//else
+	//	cout << "Heap must be empty!!!" << endl;
+
+	//cout << "Try deleting top player..." << endl;
 
 
 	system("pause");

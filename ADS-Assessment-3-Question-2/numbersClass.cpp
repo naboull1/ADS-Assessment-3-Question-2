@@ -1,8 +1,7 @@
 #include "numbersClass.h"
 
 
-numbersClass::numbersClass(int rank, string name)
+numbersClass::numbersClass(int rank)
 {
 	this->rank = rank;
-	this->name = name;
 }

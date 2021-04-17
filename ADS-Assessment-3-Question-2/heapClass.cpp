@@ -44,6 +44,7 @@ void heapClass::heapifyup(int index)
         //since we swapped, lets run heapifyup again recursively on the parent from here
         heapifyup(parentIndex(index));
     }
+    
 }
 
 
@@ -117,10 +118,9 @@ numbersClass* heapClass::ExtractMin()
 
 void heapClass::showHeap()
 {
-    cout << "Heap -->";
     for (numbersClass p : heap)
     {
-        cout << "[" << p.rank << " " << p.name << "] ";
+        cout << p.rank << "   " ;
     }
     cout << endl;
 }
@@ -128,4 +128,9 @@ void heapClass::showHeap()
 int heapClass::Size()
 {
     return heap.size();
+}
+
+void heapClass::beforeHeap(numbersClass element1)
+{
+    heap.push_back(element1);
 }
